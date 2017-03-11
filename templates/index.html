@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>image compression</title>
+</head>
+<body>
+
+<h2>Image Compression is happening here bc </h2>
+
+<form class= "form-horizontal" action="{{url_for('upload')}}" method="post" autocomplete="on" enctype="multipart/form-data" >
+
+	 <div class="form-group">
+
+		<label class="control-label col-sm-3" for="image">Upload Image : </label>
+      	<div class="col-sm-5"> 
+		<input type="file" class="form-control" name="image" id="image" required></input>
+		</div>
+	</div>
+
+	<div class="form-group">
+      <div class="col-sm-offset-3 col-sm-5">
+        <button type="submit" class="btn btn-success">submit</button>
+      </div>
+    </div>
+
+</form>
+
+<a href="{{ url_for('view') }}">View Image</a>
+
+</body>
+</html>
